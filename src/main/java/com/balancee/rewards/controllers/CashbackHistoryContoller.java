@@ -17,7 +17,7 @@ import lombok.RequiredArgsConstructor;
 
 
 @RestController
-@RequestMapping("/api/rewards/history")
+@RequestMapping("/history")
 @RequiredArgsConstructor
 public class CashbackHistoryContoller {
     private final CashbackHistoryService cashbackHistoryService;
