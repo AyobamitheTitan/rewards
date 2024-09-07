@@ -18,6 +18,10 @@ I did not add JWT Authentication as I am not very comfortable working with sprin
 
 I used postgresql as my database of choice and the configuration (database name, username and password) are contained in the application.properties file. Please update as necessary
 
-To install the dependencies run:
+To install the dependencies, run:
 
 ```./mvnw install -f pom.xml```
+
+To run the application, run the command below:
+
+```./mvnw spring-boot:run```
