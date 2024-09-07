@@ -38,4 +38,12 @@ public class CashbackHistory {
     @ManyToOne
     @JoinColumn(name="customer_id")
     private CustomerRewards customerRewards;
+
+    public CashbackHistory(double amountEarned, String description, Date transactionDate) {
+        this.amountEarned = amountEarned;
+        this.description = description;
+        this.transactionDate = transactionDate;
+    }
+
+
 }

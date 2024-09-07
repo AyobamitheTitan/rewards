@@ -33,4 +33,9 @@ public class CustomerRewards {
 
     @OneToMany(mappedBy= "customerRewards", cascade=CascadeType.ALL)
     private List<CashbackHistory> cashbackHistory = new ArrayList<CashbackHistory>();
+
+    public CustomerRewards(double currentBalance, double totalCashBack) {
+        this.currentBalance = currentBalance;
+        this.totalCashBack = totalCashBack;
+    }
 }
