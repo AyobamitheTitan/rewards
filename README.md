@@ -1,0 +1,1 @@
+run ./mvnw install -f pom.xml
