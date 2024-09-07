@@ -25,3 +25,16 @@ To install the dependencies, run:
 To run the application, run the command below:
 
 ```./mvnw spring-boot:run```
+
+#### Endpoints
+
+- `/api/rewards/balance/{customerId}`
+
+Searches through the `CustomerRewards` table and returns the customerId, totalCashback and currentBalance for
+a particular user
+
+- `/api/rewards/history/{customerId}`
+
+Searches through the `CashbackHistory` table and returns transactionId, transactionDate, amountEarned and description for a particular user
+
+I added a `customerId` column to this table so i could relate it to the `CustomerRewards` table.
